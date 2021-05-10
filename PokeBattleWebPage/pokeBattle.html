@@ -1,0 +1,157 @@
+
+<html>
+<head>
+	
+	<script src="pokeBattle.js" defer></script>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<link href="pokeBattle.css" type="text/css" rel="stylesheet">
+</head>
+<body onload="hideAll()">
+<input type="text" id="searchPK" placeholder='Name or Number < 650'>
+<button onclick="searchPokemon()" id="searchButton" >Select Pokemon</button>
+<button onclick="genRandBattle()" id="randGenButton">Generate Random Battle</button>
+
+<div id="battle">
+	<div id="opp">
+		<div id ="oppPkName"></div>
+		<img id="opp_def" src="">
+		<div id="oppHealth">
+			<div id="oppHealthBar" class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width:100%"><div id="oppCurrent"></div>
+			</div>
+		</div>
+	</div>
+	<div id="user">
+		
+		<img id="user_def" src="">
+		<div id="">
+			<div id ="userPkName"> </div>
+				<div id="userHealth">
+					<div id="userHealthBar" class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+					<div id="userCurrent"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="userMoves">
+			
+			<button id="userMove1Name" onclick="battleSequence(1)"></button>
+			<button id="userMove2Name" onclick="battleSequence(2)"></button>
+			<button id="userMove3Name" onclick="battleSequence(3)"></button>
+			<button id="userMove4Name" onclick="battleSequence(4)"></button>
+			
+		</div>
+		<div id="oppMoves">
+		<table><tr>
+			<td id="oppMove1Name"></td>
+			<td id="oppMove2Name"></td>
+			<td id="oppMove3Name"></td>
+			<td id="oppMove4Name"></td>
+		</tr></table>
+		</div>
+</div>
+<table id="userAttributes">
+	<tr id="userStats">
+		<td id="userSpeed"></td>
+		<td id="userspecial-attack"></td>
+		<td id="userattack"></td>
+		<td id="userdefence"></td>
+		<td id="userspecial-defence"></td>
+		<td id="userHealthMax"></td>
+		<td id="useraccuracy">1</td>
+		<td id="userType1"></td>
+		<td id="userType2"></td>
+		
+	</tr>
+	<tr>
+		<td id="userMove1Acc"></td>
+		<td id="userMove1Power"></td>
+		<td id="userMove1DamageClass"></td>
+		<td id="userMove1Effect"></td>
+		<td id="userMove1EffectVal"></td>
+		<td id="userMove1Type"></td>
+		<td id="userMove1Target"></td>
+	</tr>
+	<tr>
+		<td id="userMove2Acc"></td>
+		<td id="userMove2Power"></td>
+		<td id="userMove2DamageClass"></td>
+		<td id="userMove2Effect"></td>
+		<td id="userMove2EffectVal"></td>
+		<td id="userMove2Type"></td>
+		<td id="userMove2Target"></td>
+	</tr>
+	<tr>
+		<td id="userMove3Acc"></td>
+		<td id="userMove3Power"></td>
+		<td id="userMove3DamageClass"></td>
+		<td id="userMove3Effect"></td>
+		<td id="userMove3EffectVal"></td>
+		<td id="userMove3Type"></td>
+		<td id="userMove3Target"></td>
+	</tr>
+	<tr>
+		<td id="userMove4Acc"></td>
+		<td id="userMove4Power"></td>
+		<td id="userMove4Acc"></td>
+		<td id="userMove4DamageClass"></td>
+		<td id="userMove4Effect"></td>
+		<td id="userMove4EffectVal"></td>
+		<td id="userMove4Type"></td>
+		<td id="userMove4Target"></td>
+	</tr>
+</table>
+<table id="oppAttributes">
+	<tr id="userStats">
+		<td id="oppSpeed"></td>
+		<td id="oppspecial-attack"></td>
+		<td id="oppattack"></td>
+		<td id="oppdefence"></td>
+		<td id="oppspecial-defence"></td>
+		<td id="oppHealthMax"></td>
+		<td id="oppaccuracy">1</td>
+		<td id="oppType1"></td>
+		<td id="oppType2"></td>
+	</tr>
+	<tr>
+		<td id="oppMove1Acc"></td>
+		<td id="oppMove1Power"></td>
+		<td id="oppMove1DamageClass"></td>
+		<td id="oppMove1Effect"></td>
+		<td id="oppMove1EffectVal"></td>
+		<td id="oppMove1Type"></td>
+		<td id="oppMove1Target"></td>
+	</tr>
+	<tr>
+		<td id="oppMove2Acc"></td>
+		<td id="oppMove2Power"></td>
+		<td id="oppMove2DamageClass"></td>
+		<td id="oppMove2Effect"></td>
+		<td id="oppMove2EffectVal"></td>
+		<td id="oppMove2Type"></td>
+		<td id="oppMove2Target"></td>
+	</tr>
+	<tr>
+		<td id="oppMove3Acc"></td>
+		<td id="oppMove3Power"></td>
+		<td id="oppMove3DamageClass"></td>
+		<td id="oppMove3Effect"></td>
+		<td id="oppMove3EffectVal"></td>
+		<td id="oppMove3Type"></td>
+		<td id="oppMove3Target"></td>
+	</tr>
+	<tr>
+		<td id="oppMove4Acc"></td>
+		<td id="oppMove4Power"></td>
+		<td id="oppMove4DamageClass"></td>
+		<td id="oppMove4Effect"></td>
+		<td id="oppMove4EffectVal"></td>
+		<td id="oppMove4Type"></td>
+		<td id="oppMove4Target"></td>
+	</tr>
+</table>
+</body>
+</html>
