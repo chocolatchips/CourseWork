@@ -1,0 +1,46 @@
+﻿<Properties StartupConfiguration="{DEA81395-FCCD-4C2B-8DB0-C25BA1A82AD5}|Default">
+  <MonoDevelop.Ide.ItemProperties.NoteKeeper.Android PreferredExecutionTarget="Android.pixel_2_q_10_0_-_api_29" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="NoteKeeper/Views/ItemsPage.xaml.cs">
+    <Files>
+      <File FileName="NoteKeeper/Views/ItemDetailPage.xaml" Line="24" Column="26" />
+      <File FileName="NoteKeeper/Views/ItemDetailPage.xaml.cs" />
+      <File FileName="NoteKeeper/Views/ItemsPage.xaml" />
+      <File FileName="NoteKeeper/Views/ItemsPage.xaml.cs" Line="61" Column="1" />
+      <File FileName="NoteKeeper/Services/MockNoteDataStore.cs" />
+      <File FileName="NoteKeeper/ViewModels/ItemDetailViewModel.cs" />
+      <File FileName="NoteKeeper/ViewModels/BaseViewModel.cs" />
+      <File FileName="NoteKeeper/Services/INoteDataStore.cs" />
+      <File FileName="NoteKeeper/Models/Note.cs" />
+      <File FileName="NoteKeeper/ViewModels/ItemsViewModel.cs" />
+      <File FileName="NoteKeeper/App.xaml" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="NoteKeeper" expanded="True">
+            <Node name="NoteKeeper" expanded="True">
+              <Node name="Models" expanded="True" />
+              <Node name="Services" expanded="True" />
+              <Node name="ViewModels" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="ItemDetailPage.xaml" expanded="True" />
+                <Node name="ItemsPage.xaml" expanded="True">
+                  <Node name="ItemsPage.xaml.cs" selected="True" />
+                </Node>
+              </Node>
+              <Node name="App.xaml" expanded="True" />
+            </Node>
+            <Node name="NoteKeeper.iOS" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.NoteKeeper.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.C80046CE-017D-4BD1-8593-DE98DE9824DA" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
