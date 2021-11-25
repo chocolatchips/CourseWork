@@ -52,6 +52,17 @@ namespace NoteKeeper.ViewModels
             }
         }
 
+        public String NoteCourse
+        {
+            get { return Note.Course; }
+            set
+            {
+                Note.Course = value;
+                OnPropertyChanged();
+            }
+        }
+
+
         public ItemDetailViewModel(Item item = null)
         {
             Title = item?.Text;
@@ -64,7 +75,10 @@ namespace NoteKeeper.ViewModels
             CourseList = await NoteDataStore.GetCoursesAsync();
         }
 
-
+        public async void SaveNote()
+        {
+            await NoteDataStore.AddNoteAsync(Note);
+        }
 
     }
 }

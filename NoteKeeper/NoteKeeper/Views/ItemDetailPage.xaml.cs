@@ -34,7 +34,13 @@ namespace NoteKeeper.Views
 
         public async void Save_Clicked(object sender, EventArgs eventArgs)
         {
-            await DisplayAlert("Save option", "Cancel was selected", "Ok");
+            
+            bool answer = await DisplayAlert("Alert", "Would you like to save current note?", "Yes", "No");
+            if (answer)
+            {
+                viewModel.SaveNote();
+                await Navigation.PopModalAsync();
+            }
         }
 
     }

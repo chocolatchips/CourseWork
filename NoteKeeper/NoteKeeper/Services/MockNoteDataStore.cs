@@ -22,9 +22,8 @@ namespace NoteKeeper.Services
                 "Managing Android App Data"
             };
 
-            mockNotes = new List<Note>
-            {
-                new Note {Id = "0", Heading = "UI Code", Text = "Xamarin.Forms UI code shared", Course = "Intro to Xamarin.Forms"} };
+            mockNotes = new List<Note>();
+           // {new Note {Id = "0", Heading = "UI Code", Text = "Xamarin.Forms UI code shared", Course = "Intro to Xamarin.Forms"} };
         }
 
         public async Task<bool> AddNoteAsync(Note courseNote)
