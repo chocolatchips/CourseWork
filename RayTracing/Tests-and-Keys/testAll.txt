@@ -1,0 +1,12 @@
+Assignment3-Tests-and-Keys/TestAmbient.txt
+Assignment3-Tests-and-Keys/testBackground.txt
+Assignment3-Tests-and-Keys/testBehind.txt
+Assignment3-Tests-and-Keys/testDiffuse.txt
+Assignment3-Tests-and-Keys/testIllum.txt
+Assignment3-Tests-and-Keys/testImgPlane.txt
+Assignment3-Tests-and-Keys/testIntersection.txt
+Assignment3-Tests-and-Keys/testParsing.txt
+Assignment3-Tests-and-Keys/testReflection.txt
+Assignment3-Tests-and-Keys/testSample.txt
+Assignment3-Tests-and-Keys/testShadow.txt
+Assignment3-Tests-and-Keys/testSpecular.txt
